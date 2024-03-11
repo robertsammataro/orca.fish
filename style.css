@@ -26,10 +26,10 @@ body, h1, p, ul, li {
 }
 
 .left-panel {
-  margin: 10px;
+  margin: 5%;
   text-align: center;
   min-width: fit-content;
-  border-radius: 10px;
+  border-radius: 5%;
   height: max-content;
   padding-bottom: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -37,9 +37,9 @@ body, h1, p, ul, li {
 }
 
 .right-panel {
-  margin: 10px;
+  margin: 5%;
   width: auto;
-  border-radius: 10px;
+  border-radius: 5%;
   background-color: rgb(223, 218, 218);
   text-align: center;
   padding: 10px;
@@ -68,7 +68,8 @@ body, h1, p, ul, li {
 }
 
 
-@media screen and (min-width: 390px) {
+/* For Tablet/Desktop Devices */
+@media (min-aspect-ratio: 1/1.25) {
 
   .left-panel {
     flex: 1;
@@ -98,14 +99,23 @@ body, h1, p, ul, li {
 
 }
 
-@media screen and (max-width: 390px) {
+/* For Mobile Devices */
+@media (max-aspect-ratio: 1/1.25) {
+
+  h1 {
+    font-size: 30pt;
+  }
 
   .global {
     display: block;
+    padding-top: 5%;
   }
 
-  .left-panel {
-    text-align: center;
+  .headshot {
+    width: 100%;
+    max-width: 60%;
+    margin-top: 10%;
+    border-radius: 10%
   }
 
 }
